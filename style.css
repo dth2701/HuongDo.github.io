@@ -1,0 +1,1024 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background: rgb(255, 219, 219);
+  position: fixed;
+  width: 100%;
+  max-width: 100vw;
+  z-index: 10000;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+.nav-links a:after {
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: rgb(255, 219, 219);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-links a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #333333;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  color: #333333;
+  font-size: 4rem;
+  text-align: center;
+}
+
+#nameh1 {
+  font-size: 7rem;
+  color: #f96dc3;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #333333;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#projectButton {
+  margin-top: 50px;
+}
+
+.projectLinks,
+#resumeMain {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+}
+
+#projectButton a,
+.projectLinks a,
+#resumeMain a,
+.btn-box button {
+  color: #333333;
+  padding: 15px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: 4px solid #333333;
+  border-radius: 50px;
+  background-color: white;
+  transition: background-color 0.3s ease 0s;
+}
+
+.projectLinks a,
+#resumeMain a,
+.btn-box button {
+  font-size: 0.8rem;
+  border: 2px solid #333333;
+  border-radius: 50px;
+  margin-left: 20px;
+  margin-right: 0px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#resumeMain {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#resumeMain a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.btn-box button {
+  cursor: pointer;
+  margin: 0;
+}
+
+#projectButton a:hover,
+.projectLinks a:hover,
+#resumeMain a:hover,
+.btn:hover {
+  background-color: rgb(255, 219, 219);
+}
+
+.btn-submit:hover {
+  transform: none;
+}
+
+.projectLinks a img,
+.btn img {
+  width: 19px;
+  height: 19px;
+  position: relative;
+  top: 4.5px;
+  margin-left: 5px;
+}
+
+#resumeMain a img {
+  width: 19px;
+  height: 19px;
+  position: relative;
+  top: 4px;
+  margin-left: 5px;
+}
+
+#footer-links img {
+  width: 30px;
+  height: 30px;
+}
+
+#logo {
+  margin: 10px;
+  border: 4px solid black;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 30%;
+  border-top-left-radius: 30%;
+  transition: all 0.3s ease;
+}
+
+#logo:hover {
+  background-color: rgb(255, 219, 219);
+}
+
+p {
+  color: #333333;
+  font-size: 1.2em;
+  line-height: 1.6;
+  padding: 20px;
+  width: 600px;
+}
+
+.p-project {
+  width: 800px;
+}
+
+.p-tech {
+  padding-top: 0px;
+}
+
+#aboutMeTitle,
+#projectsTitle,
+#resumeTitle,
+#contactTitle {
+  padding-top: 100px;
+}
+
+#sudokusolver {
+  padding-top: 50px;
+}
+/* #sudokusolver, */
+#bookmapper,
+#inventorylogscheduler,
+#capitolpath {
+  padding-top: 85px;
+}
+
+.projectTitle {
+  padding-bottom: 15px;
+  font-size: 2.5rem;
+}
+
+#techTitle {
+  padding-bottom: 30px;
+}
+
+#hobbiesTitle {
+  padding-bottom: 10px;
+}
+
+#aboutMeMain,
+#hobbiesMain,
+#skillsMain {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#skillsDiv,
+#hobbies,
+#sudokusolver,
+#bookmapper,
+#inventorylogscheduler,
+#capitolpath,
+#resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#aboutMe,
+#skillsDiv {
+  padding-bottom: 70px;
+}
+
+#skillsMain {
+  flex-direction: row;
+  width: 1000px;
+}
+
+a {
+  color: #333333;
+}
+a:visited {
+  color: #333333;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+#top {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#projects {
+  width: 100%;
+}
+
+button:hover {
+  transform: scale(1.25);
+}
+
+.navbarIcon:hover {
+  border: 3px solid rgb(255, 219, 219);
+}
+
+#buttonAboutMe,
+#buttonProjects,
+#buttonResume,
+#buttonGithub,
+#buttonLinkedIn,
+#buttonContact {
+  background-color: transparent;
+  width: 64px;
+  height: 64px;
+  border: none;
+  transition: transform 0.3s;
+}
+
+.navbarIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+#selfpic {
+  width: 330px;
+  height: 380px;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  background-image: url("/assets/myPicture.png");
+  background-color: #1b1c1c;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 60px;
+  filter: grayscale(1);
+  transition: all 1s ease;
+  border: 5px solid #333333;
+}
+
+#selfpic:hover {
+  filter: grayscale(0);
+  background-color: rgb(255, 219, 219);
+  transition: all 0.3s ease;
+}
+
+#hobbiesPics {
+  display: flex;
+  width: 320px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hobbiesIcon {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 10px;
+}
+
+#skincare {
+  background-image: url("/assets/hobbies/skincare.png");
+}
+#travel {
+  background-image: url("/assets/hobbies/travel.png");
+}
+
+#gym {
+  background-image: url("/assets/hobbies/gym.png");
+}
+#photography {
+  background-image: url("/assets/hobbies/photography.png");
+}
+
+#coffee {
+  background-image: url("/assets/hobbies/coffee.png");
+}
+#twice {
+  background-image: url("/assets/hobbies/TWICE.png");
+}
+
+.techDiv {
+  width: 320px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px;
+  border: 1px solid #333333;
+  margin: 6px;
+}
+
+.tech {
+  width: 64px;
+  max-height: 64px;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.techDivTitle {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #333333;
+  color: white;
+  padding: 5px;
+}
+
+.tech img {
+  width: 64px;
+  max-height: 70px;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(255, 219, 219);
+  color: #333333;
+  text-align: center;
+  border-radius: 6px;
+
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgb(255, 219, 219) transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 800px;
+  height: 450px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.sudokusolverSlides,
+.bookmapperSlides,
+.schedulerSlides,
+.capitolpathSlides {
+  display: none;
+}
+
+.projectImage {
+  width: 600px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#sudokusolverslide1 {
+  background-image: url("/assets/sudoku/SiameseMethod.gif");
+  background-size: contain;
+}
+#sudokusolverslide2 {
+  background-image: url("/assets/sudoku/output1.png");
+}
+#sudokusolverslide3 {
+  background-image: url("/assets/sudoku/output2.png");
+}
+
+#bookmapperslide1 {
+  background-image: url("/assets/bookmapper/bookmapper.png");
+  background-size: contain;
+}
+#bookmapperslide2 {
+  background-image: url("/assets/bookmapper/picture1.png");
+  background-size: contain;
+}
+#bookmapperslide3 {
+  background-image: url("/assets/bookmapper/picture2.png");
+  background-size: contain;
+}
+
+#schedulerslide1 {
+  background-image: url("/assets/scheduler/scheduler.png");
+  background-size: contain;
+}
+#schedulerslide2 {
+  background-image: url("/assets/scheduler/picture1.png");
+  background-size: contain;
+}
+#schedulerslide3 {
+  background-image: url("/assets/scheduler/picture2.png");
+  background-size: contain;
+}
+
+#capitolpathslide1 {
+  background-image: url("/assets/capitolpath/capitol.png");
+}
+#capitolpathslide2 {
+  background-image: url("/assets/capitolpath/capitolpath.png");
+  background-size: contain;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #d149b8;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #d149b8;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.sudokuDots,
+.bookDots,
+.schedulerDots,
+.capitolDots {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border: 2px solid #333333;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.sudokuDots:hover,
+.bookDots:hover,
+.schedulerDots:hover,
+.capitolDots:hover {
+  background-color: #d149b8;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* Form Styling */
+form {
+  width: 320px;
+  margin: 45px auto;
+}
+
+.group {
+  position: relative;
+  margin: 45px 0;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  background: none;
+  color: #333333;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 320px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #333333;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -14px;
+  font-size: 12px;
+  color: #333333;
+}
+input:focus ~ .bar:before,
+textarea:focus ~ .bar:before {
+  width: 320px;
+}
+
+label {
+  color: #969696;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 320px;
+  height: 1px;
+  background-color: #333333;
+}
+.bar:before {
+  content: "";
+  height: 3px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: #d149b8;
+  transition: 300ms ease all;
+  left: 0%;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+  box-shadow: 0 0 0 30px white inset;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px;
+  width: 320px;
+}
+
+#footer-links a {
+  transition: transform 0.2s ease-in-out;
+}
+
+#footer-links a:hover {
+  transform: scale(1.4);
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  #skillsMain {
+    flex-direction: row;
+    width: 320px;
+  }
+
+  #hobbiesMain {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .slideshow-container {
+    width: 100%;
+    height: 56.25vw;
+    position: relative;
+    margin: auto;
+  }
+
+  #sudokusolver,
+  #bookmapper,
+  #inventorylogscheduler,
+  #capitolpath {
+    width: 100%;
+  }
+
+  .projectImage {
+    width: 100%;
+    height: 56.25vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .project-description {
+    width: 100%;
+  }
+
+  p.p-project {
+    width: 100%;
+    padding: 28px;
+    margin: 0px;
+  }
+
+  p.p-project.p-tech {
+    padding-top: 0px;
+  }
+
+  .projectLinks,
+  #resumeMain {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .projectLinks a,
+  #resumeMain a {
+    margin-bottom: 15px;
+  }
+}
+
+/* ------MOBILE PHONES STYLING------ */
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  #nameh1 {
+    font-size: 3.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .projectTitle {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  nav {
+    position: fixed;
+    width: 100%;
+  }
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 92vh;
+    height: calc(100vh - 70px);
+    top: 70px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    border-left: 1px solid black;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  #projectButton a {
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 3px solid #333333;
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  p {
+    line-height: 1.6;
+    padding: 8px;
+    margin: 20px;
+    font-size: 1rem;
+  }
+
+  #skillsMain {
+    flex-direction: row;
+  }
+
+  .skills {
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .navbarIcon {
+    width: 35px;
+    height: 35px;
+  }
+
+  #selfpic {
+    width: 240px;
+    height: 240px;
+    margin: 10px;
+    margin-top: 50px;
+  }
+
+  #hobbiesPics {
+    display: flex;
+    width: 320px;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .hobbiesIcon {
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 5px;
+  }
+
+  .slideshow-container {
+    width: 100%;
+    height: 100vw;
+    position: relative;
+    margin: auto;
+  }
+
+  .projectImage {
+    width: 100%;
+    height: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .project-description {
+    width: 100%;
+  }
+
+  p.p-project {
+    width: 100%;
+    padding: 28px;
+    margin: 0px;
+  }
+
+  p.p-project.p-tech {
+    padding-top: 0px;
+  }
+}
+
+@media only screen and (max-height: 600px) and (orientation: landscape) {
+  #helloh2 {
+    padding-top: 70px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  /* Form Styling */
+  form {
+    width: 300px;
+    margin: 45px auto;
+  }
+
+  input,
+  textarea {
+    background: none;
+    color: #333333;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #333333;
+  }
+
+  input:focus ~ .bar:before,
+  textarea:focus ~ .bar:before {
+    width: 300px;
+  }
+
+  .bar {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 1px;
+    background-color: #333333;
+  }
+}
