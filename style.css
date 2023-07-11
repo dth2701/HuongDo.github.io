@@ -520,6 +520,7 @@ button:hover {
 .projectImage {
   width: 600px;
   height: 400px;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
