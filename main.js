@@ -48,14 +48,16 @@ const navSlide = () => {
 navSlide();
 
 // index of each deck, initialized to first slide for each deck
-let slideIndex = [1, 1, 1, 1];
+let slideIndex = [1, 1, 1, 1, 1, 1];
 
-let slideId = ["sudokusolverSlides", "bookmapperSlides", "schedulerSlides","capitolpathSlides"];
-let dotId = ["sudokuDots", "bookDots", "schedulerDots","capitolDots"];
+let slideId = ["moviefinderSlides","weatherappSlides","sudokusolverSlides", "bookmapperSlides", "schedulerSlides","capitolpathSlides"];
+let dotId = ["movieDots","weatherDots","sudokuDots", "bookDots", "schedulerDots","capitolDots"];
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
 showSlides(1, 3);
+showSlides(1, 4);
+showSlides(1, 5);
 
 // Next/previous controls
 function plusSlides(n, no) {

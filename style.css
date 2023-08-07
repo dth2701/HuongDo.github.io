@@ -13,6 +13,7 @@ body {
   width: 100%;
   height: 100vh;
   font-family: "Lato", sans-serif;
+  /* background: #f8d2d6; */
 }
 
 nav {
@@ -87,12 +88,12 @@ h1 {
 
 #nameh1 {
   font-size: 7rem;
-  color: #f96dc3;
+  color: rgb(255, 134, 173);
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
 }
-
+ 
 h2 {
   font-size: 4rem;
   font-weight: 700;
@@ -174,7 +175,7 @@ h3 {
 .projectLinks a:hover,
 #resumeMain a:hover,
 .btn:hover {
-  background-color: rgb(255, 219, 219);
+  background-color: rgb(251, 169, 169);
 }
 
 .btn-submit:hover {
@@ -248,6 +249,8 @@ p {
   padding-top: 50px;
 }
 /* #sudokusolver, */
+#moviefinder,
+#weatherapp,
 #bookmapper,
 #inventorylogscheduler,
 #capitolpath {
@@ -279,6 +282,8 @@ p {
 
 #skillsDiv,
 #hobbies,
+#moviefinder,
+#weatherapp,
 #sudokusolver,
 #bookmapper,
 #inventorylogscheduler,
@@ -510,6 +515,8 @@ button:hover {
 }
 
 /* Hide the images by default */
+.moviefinderSlides,
+.weatherappSlides,
 .sudokusolverSlides,
 .bookmapperSlides,
 .schedulerSlides,
@@ -524,6 +531,22 @@ button:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+#moviefinderslide1 {
+  background-image: url("/assets/moviefinder/movie1.png");
+  background-size: contain;
+}
+#moviefinderslide2 {
+  background-image: url("/assets/moviefinder/movie2.png");
+  background-size: contain;
+}
+#weatherappslide1 {
+  background-image: url("/assets/weatherapp/weather1.png");
+  background-size: contain;
+}
+#weatherappslide2 {
+  background-image: url("/assets/weatherapp/weather2.png");
+  background-size: contain;
 }
 #sudokusolverslide1 {
   background-image: url("/assets/sudoku/SiameseMethod.gif");
@@ -579,7 +602,7 @@ button:hover {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: #d149b8;
+  color: #ff6773;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -601,7 +624,7 @@ button:hover {
 
 /* Caption text */
 .text {
-  color: #d149b8;
+  color: rgb(255, 134, 173);
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -612,6 +635,8 @@ button:hover {
 }
 
 /* The dots/bullets/indicators */
+.movieDots,
+.weatherDots,
 .sudokuDots,
 .bookDots,
 .schedulerDots,
@@ -628,11 +653,13 @@ button:hover {
 }
 
 .active,
+.movieDots:hover,
+.weatherDots:hover,
 .sudokuDots:hover,
 .bookDots:hover,
 .schedulerDots:hover,
 .capitolDots:hover {
-  background-color: #d149b8;
+  background-color: rgb(255, 134, 173);
 }
 
 /* Fading animation */
@@ -733,7 +760,7 @@ label {
   width: 0;
   bottom: 0px;
   position: absolute;
-  background: #d149b8;
+  background: rgb(255, 134, 173);
   transition: 300ms ease all;
   left: 0%;
 }
@@ -787,7 +814,8 @@ footer {
     position: relative;
     margin: auto;
   }
-
+  #moviefinder,
+  #weatherapp,
   #sudokusolver,
   #bookmapper,
   #inventorylogscheduler,
