@@ -44,7 +44,14 @@
       <h2 id="nameh1" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="300"
         data-aos="fade-up">
         Huong (Amy) Do.</h2>
-     
+      
+        <h3 id="seh2" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="450"
+        data-aos="fade-up">
+        Currenly working as
+        <span style="color:rgb(255, 134, 173)">Web Developer</span>
+         at UW-Madison.
+      </h3> 
+      
       <h3 id="seh2" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="450"
         data-aos="fade-up">
         Working as
@@ -78,55 +85,56 @@
     <div id="projectsTitle" data-aos="fade-up">
       <h1>Portfolio</h1>
     </div>
-
-    <div id="moviefinder" data-aos="fade-up">
-      <h1 class="projectTitle">Movie Finder</h1>
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
+    
+    <div class="project-row">
+      <div id="moviefinder" data-aos="fade-up">
+        <h1 class="projectTitle">Movie Finder</h1>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+    
+          <div class="moviefinderSlides fade">
+            <div class="projectImage" id="moviefinderslide1"></div>
+            <div class="text"> Movie Finder is an a responsive web application 
+              that allows users to search, explore, and gain detailed insights into movies, leveraging React.js, HTML, CSS, and interfacing with The Movie Database API. </div>
+          </div>
   
-        <div class="moviefinderSlides fade">
-          <div class="projectImage" id="moviefinderslide1"></div>
-          <div class="text"> Movie Finder is an a responsive web application 
-            that allows users to search, explore, and gain detailed insights into movies, leveraging React.js, HTML, CSS, and interfacing with The Movie Database API. </div>
+          <div class="moviefinderSlides fade">
+            <div class="projectImage" id="moviefinderslide2"></div>
+            <div class="text"> The 'movies by genres' feature allow users to effortlessly browse and discover films based on specific genres. 
+              By selecting a genre from a well-organized list, users are presented with a curated selection of movies that fit their chosen category. 
+              This feature enhances user experience by providing targeted and relevant content, catering to individual preferences and interests.</div>
+          </div>
+  
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        <br>
+  
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="movieDots" onclick="currentSlide(1, 0)"></span>
+          <span class="movieDots" onclick="currentSlide(2, 0)"></span>
         </div>
   
-        <div class="moviefinderSlides fade">
-          <div class="projectImage" id="moviefinderslide2"></div>
-          <div class="text"> The 'movies by genres' feature allow users to effortlessly browse and discover films based on specific genres. 
-            By selecting a genre from a well-organized list, users are presented with a curated selection of movies that fit their chosen category. 
-            This feature enhances user experience by providing targeted and relevant content, catering to individual preferences and interests.</div>
+        <!-- Description of project -->
+        <div class="project-description">
+          <p class="p-project">
+            Developed a user-centric movie recommendation web application,
+            utilizing React.js and The Movie Database API to deliver personalized film suggestions and detailed movie information.
+          </p>
+          <p class="p-project p-tech">
+            Technologies: React, JavaScript, HTML, CSS.
+          </p>
         </div>
   
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        <!-- Project Links -->
+        <div class="projectLinks">
+          <a href="https://github.com/dth2701/Movie-Finder" target="_blank">View Code <img src="/assets/github3.png" /></a>
+          <a href="https://dth2701.github.io/Movie-Finder" target="_blank">Demo<img src="/assets/externallink2.png" /></a>
+        </div>
+    
       </div>
-      <br>
-  
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="movieDots" onclick="currentSlide(1, 0)"></span>
-        <span class="movieDots" onclick="currentSlide(2, 0)"></span>
-      </div>
-  
-      <!-- Description of project -->
-      <div class="project-description">
-        <p class="p-project">
-          Developed a user-centric movie recommendation web application,
-           utilizing React.js and The Movie Database API to deliver personalized film suggestions and detailed movie information.
-        </p>
-        <p class="p-project p-tech">
-          Technologies: React, JavaScript, HTML, CSS.
-        </p>
-      </div>
-  
-      <!-- Project Links -->
-      <div class="projectLinks">
-        <a href="https://github.com/dth2701/Movie-Finder" target="_blank">View Code <img src="/assets/github3.png" /></a>
-        <a href="https://dth2701.github.io/Movie-Finder" target="_blank">Demo<img src="/assets/externallink2.png" /></a>
-      </div>
-  
-    </div>
 
     <div id="weatherapp" data-aos="fade-up">
       <h1 class="projectTitle">Weather App</h1>
@@ -174,8 +182,9 @@
       </div>
   
     </div>
+    </div>
 
-
+    <div class="project-row">
     <div id="sudokusolver" data-aos="fade-up">
       <h1 class="projectTitle">Sudoku Solver</h1>
       <!-- Slideshow container -->
@@ -281,7 +290,9 @@
       </div>
 
     </div>
-
+    </div>
+    
+    <div class="project-row">
     <div id="inventorylogscheduler" data-aos="fade-up">
       <h1 class="projectTitle">Inventory Log Scheduler</h1>
       <div class="slideshow-container">
@@ -339,7 +350,6 @@
       </div>
 
     </div>
-  </div>
 
   <div id="capitolpath" data-aos="fade-up">
     <h1 class="projectTitle">Capitol Path</h1>
@@ -384,6 +394,8 @@
       <a href="https://github.com/dth2701/-Capitol-Paths" target="_blank">View Code <img src="/assets/github3.png" /></a>
     </div>
 
+  </div>
+    </div>
   </div>
 
   <div id="aboutMe">

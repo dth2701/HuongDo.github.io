@@ -524,6 +524,21 @@ button:hover {
   display: none;
 }
 
+.project-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#moviefinder,
+#weatherapp
+#sudokusolver,
+#bookmapper,
+#inventorylogscheduler,
+#capitolpath{
+  width: 45%; /* This will make two projects sit side by side, adjust as per margin/padding */
+}
+
 .projectImage {
   width: 600px;
   height: 400px;
@@ -806,13 +821,18 @@ footer {
     width: 100%;
   }
 }
-
+* {
+  box-sizing: border-box;
+}
 @media only screen and (max-width: 800px) {
+
   .slideshow-container {
     width: 100%;
     height: 56.25vw;
     position: relative;
     margin: auto;
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+    box-sizing: border-box;  /* Ensure padding and border are included in element's width and height */
   }
   #moviefinder,
   #weatherapp,
@@ -821,6 +841,9 @@ footer {
   #inventorylogscheduler,
   #capitolpath {
     width: 100%;
+    margin-bottom: 10px; /* Space between project elements */
+    box-sizing: border-box;  /* Ensure padding and border are included in element's width and height */
+
   }
 
   .projectImage {
@@ -829,16 +852,22 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    box-sizing: border-box;  /* Ensure padding and border are included in element's width and height */
+
   }
 
   .project-description {
     width: 100%;
+    box-sizing: border-box;  /* Ensure padding and border are included in element's width and height */
+
   }
 
   p.p-project {
     width: 100%;
-    padding: 28px;
+    padding: 28px 0; /* Remove left/right padding, keeping top/bottom */
     margin: 0px;
+    box-sizing: border-box;  /* Ensure padding and border are included in element's width and height */
+
   }
 
   p.p-project.p-tech {
@@ -849,6 +878,9 @@ footer {
   #resumeMain {
     width: 100%;
     flex-wrap: wrap;
+    margin-bottom: 10px; /* Add some bottom space */
+    box-sizing: border-box;  /* Ensure padding and border are included in element's width and height */
+
   }
 
   .projectLinks a,
