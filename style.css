@@ -318,6 +318,7 @@ p {
 .projectTitle {
   padding-bottom: 15px;
   font-size: 2.5rem;
+  width: 700px;
 }
 
 #techTitle {
@@ -699,7 +700,7 @@ button:hover {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 0 4px;
   background-color: white;
   border: 2px solid #333333;
   border-radius: 50%;
