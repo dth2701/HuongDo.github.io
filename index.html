@@ -80,320 +80,293 @@
     </div>
   </div>
 
-
-  <div id="projects">
-    <div id="projectsTitle" data-aos="fade-up">
-      <h1>Portfolio</h1>
-    </div>
-    
-
-      <div id="moviefinder" data-aos="fade-up">
-        <h1 class="projectTitle">Movie Finder</h1>
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-    
-          <div class="moviefinderSlides fade">
-            <div class="projectImage" id="moviefinderslide1"></div>
-            <div class="text"> Movie Finder is an a responsive web application 
-              that allows users to search, explore, and gain detailed insights into movies, leveraging React.js, HTML, CSS, and interfacing with The Movie Database API. </div>
+  <div id="portfolio">
+    <div>
+      <div id="projectsTitle" data-aos="fade-up">
+        <h1>Projects</h1>
+      </div>
+      <div class="work-list"  >
+        <div class="work" data-aos="fade-up">
+            <h1 class="projectTitle">Movie Finder</h1>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+        
+              <div class="moviefinderSlides fade">
+                <div class="projectImage" id="moviefinderslide1"></div>
+                <div class="text"> Movie Finder is an a responsive web application 
+                  that allows users to search, explore, and gain detailed insights into movies, leveraging React.js, HTML, CSS, and interfacing with The Movie Database API. </div>
+              </div>
+      
+              <div class="moviefinderSlides fade">
+                <div class="projectImage" id="moviefinderslide2"></div>
+                <div class="text"> The 'movies by genres' feature allow users to effortlessly browse and discover films based on specific genres. 
+                  By selecting a genre from a well-organized list, users are presented with a curated selection of movies that fit their chosen category. 
+                  This feature enhances user experience by providing targeted and relevant content, catering to individual preferences and interests.</div>
+              </div>
+      
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+      
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+              <span class="movieDots" onclick="currentSlide(1, 0)"></span>
+              <span class="movieDots" onclick="currentSlide(2, 0)"></span>
+            </div>
+      
+            <!-- Description of project -->
+            <div class="project-description">
+              <p class="p-project">
+                Developed a user-centric movie recommendation web application,
+                utilizing React.js and The Movie Database API to deliver personalized film suggestions and detailed movie information.
+              </p>
+              <p class="p-project p-tech">
+                Technologies: React, JavaScript, HTML, CSS.
+              </p>
+            </div>
+      
+            <!-- Project Links -->
+            <div class="projectLinks">
+              <a href="https://github.com/dth2701/Movie-Finder" target="_blank">View Code <img src="/assets/github3.png" /></a>
+              <a href="https://dth2701.github.io/Movie-Finder" target="_blank">Demo<img src="/assets/externallink2.png" /></a>
+            </div>
+        </div>
+        <div class="work" data-aos="fade-up">
+          <h1 class="projectTitle">Weather App</h1>
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+      
+            <div class="weatherappSlides fade">
+              <div class="projectImage" id="weatherappslide1"></div>
+              <div class="text"> Weather condition in Wisconsin, Madison.
+              </div>
+            </div>
+      
+            <div class="weatherappSlides fade">
+              <div class="projectImage" id="weatherappslide2"></div>
+              <div class="text"> Weather condition in Hanoi, Vietnam.</div>
+            </div>
+      
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
           </div>
-  
-          <div class="moviefinderSlides fade">
-            <div class="projectImage" id="moviefinderslide2"></div>
-            <div class="text"> The 'movies by genres' feature allow users to effortlessly browse and discover films based on specific genres. 
-              By selecting a genre from a well-organized list, users are presented with a curated selection of movies that fit their chosen category. 
-              This feature enhances user experience by providing targeted and relevant content, catering to individual preferences and interests.</div>
+      
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="weatherDots" onclick="currentSlide(1, 1)"></span>
+            <span class="weatherDots" onclick="currentSlide(2, 1)"></span>
           </div>
-  
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-        </div>
-        <br>
-  
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-          <span class="movieDots" onclick="currentSlide(1, 0)"></span>
-          <span class="movieDots" onclick="currentSlide(2, 0)"></span>
-        </div>
-  
-        <!-- Description of project -->
-        <div class="project-description">
-          <p class="p-project">
-            Developed a user-centric movie recommendation web application,
-            utilizing React.js and The Movie Database API to deliver personalized film suggestions and detailed movie information.
-          </p>
-          <p class="p-project p-tech">
-            Technologies: React, JavaScript, HTML, CSS.
-          </p>
-        </div>
-  
-        <!-- Project Links -->
-        <div class="projectLinks">
-          <a href="https://github.com/dth2701/Movie-Finder" target="_blank">View Code <img src="/assets/github3.png" /></a>
-          <a href="https://dth2701.github.io/Movie-Finder" target="_blank">Demo<img src="/assets/externallink2.png" /></a>
-        </div>
-    
-      </div>
-
-    <div id="weatherapp" data-aos="fade-up">
-      <h1 class="projectTitle">Weather App</h1>
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
-  
-        <div class="weatherappSlides fade">
-          <div class="projectImage" id="weatherappslide1"></div>
-          <div class="text"> Weather condition in Wisconsin, Madison.
+      
+          <!-- Description of project -->
+          <div class="project-description">
+            <p class="p-project">
+              "Weather App" is a clean and user-friendly web application designed to provide real-time weather information.
+              It allows users to search for weather conditions in specific locations, displaying details such as temperature, humidity, wind speed, and general conditions.
+            </p>
+            <p class="p-project p-tech">
+              Technologies: React, JavaScript, HTML, CSS.
+            </p>
+          </div>
+      
+          <!-- Project Links -->
+          <div class="projectLinks">
+            <a href="https://github.com/dth2701/weather-app" target="_blank">View Code <img src="/assets/github3.png" /></a>
+            <a href="https://dth2701.github.io/weather-app" target="_blank">Demo<img src="/assets/externallink2.png" /></a>
           </div>
         </div>
-  
-        <div class="weatherappSlides fade">
-          <div class="projectImage" id="weatherappslide2"></div>
-          <div class="text"> Weather condition in Hanoi, Vietnam.</div>
-        </div>
-  
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-      </div>
-      <br>
-  
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="weatherDots" onclick="currentSlide(1, 1)"></span>
-        <span class="weatherDots" onclick="currentSlide(2, 1)"></span>
-      </div>
-  
-      <!-- Description of project -->
-      <div class="project-description">
-        <p class="p-project">
-          "Weather App" is a clean and user-friendly web application designed to provide real-time weather information.
-          It allows users to search for weather conditions in specific locations, displaying details such as temperature, humidity, wind speed, and general conditions.
-        </p>
-        <p class="p-project p-tech">
-          Technologies: React, JavaScript, HTML, CSS.
-        </p>
-      </div>
-  
-      <!-- Project Links -->
-      <div class="projectLinks">
-        <a href="https://github.com/dth2701/weather-app" target="_blank">View Code <img src="/assets/github3.png" /></a>
-        <a href="https://dth2701.github.io/weather-app" target="_blank">Demo<img src="/assets/externallink2.png" /></a>
-      </div>
-  
-    </div>
-
-
-    <div id="sudokusolver" data-aos="fade-up">
-      <h1 class="projectTitle">Sudoku Solver</h1>
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
-
-        <div class="sudokusolverSlides fade">
-          <div class="projectImage" id="sudokusolverslide1"></div>
-          <div class="text"> Sudoku-solver is an app that solves any Sudoku Puzzle using C and GDB. </div>
-        </div>
-
-        <div class="sudokusolverSlides fade">
-          <div class="projectImage" id="sudokusolverslide2"></div>
-          <div class="text"> Form an order 3 magic square according to the Siamese method (9 boxes).  </div>
-        </div>
-
-        <div class="sudokusolverSlides fade">
-          <div class="projectImage" id="sudokusolverslide3"></div>
-          <div class="text">Form an order 13 magic square according to the Siamese method (169 boxes).</div>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
-      </div>
-      <br>
-
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="sudokuDots" onclick="currentSlide(1, 2)"></span>
-        <span class="sudokuDots" onclick="currentSlide(2, 2)"></span>
-        <span class="sudokuDots" onclick="currentSlide(3, 2)"></span>
-      </div>
-
-      <!-- Description of project -->
-      <div class="project-description">
-        <p class="p-project">
-          Developed a C Sudoku Solver using the Siamese method for any grid size, 
-          incorporating arrays, command-line arguments, file I/O, pointers, and structures, debugged with GDB.
-        </p>
-        <p class="p-project p-tech">
-          Technologies: C and GDB
-        </p>
-      </div>
-
-      <!-- Project Links -->
-      <div class="projectLinks">
-        <a href="https://github.com/dth2701/Sudoku-Solver" target="_blank">View Code <img src="/assets/github3.png" /></a>
-        <a href="https://en.wikipedia.org/wiki/Siamese_method" target="_blank">External Source<img src="/assets/externallink2.png" /></a>
-      </div>
-
-    </div>
-
-    <div id="bookmapper" data-aos="fade-up">
-      <h1 class="projectTitle">Book Mapper</h1>
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
-
-        <div class="bookmapperSlides fade">
-          <div class="projectImage" id="bookmapperslide1"></div>
-          <div class="text"> Book Mapper is a library application to help the users searching books.  </div>
-        </div>
-
-        <div class="bookmapperSlides fade">
-          <div class="projectImage" id="bookmapperslide2"></div>
-          <div class="text"> Logged-in users can lookup the book's ISBN, searching by title word, and set author name filter. 
-            I am trying to search all the books containing "100" in the title by using option 2. </div>
-        </div>
-
-        <div class="bookmapperSlides fade">
-          <div class="projectImage" id="bookmapperslide3"></div>
-          <div class="text">Display the list of books whose title contains the word "100."</div>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
-      </div>
-      <br>
-
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="bookDots" onclick="currentSlide(1, 3)"></span>
-        <span class="bookDots" onclick="currentSlide(2, 3)"></span>
-        <span class="bookDots" onclick="currentSlide(3, 3)"></span>
-      </div>
-
-      <!-- Description of project -->
-      <div class="project-description">
-        <p class="p-project">
-          My team developed the application to sort through 11,000+ books in CSV format to improve
-          user experience to minimize average searching time.
-          I was in charged on operating system functionality to iterate over all the values to secure, 
-          manipulate and present data.
-        </p>
-        <p class="p-project p-tech">
-          Technologies: Java, Linux(Ubuntu).
-        </p>
-      </div>
-
-      <!-- Project Links -->
-      <div class="projectLinks">
-        <a href="https://github.com/dth2701/BookMapper" target="_blank">View Code <img src="/assets/github3.png" /></a>
-      </div>
-
-    </div>
-   
+        <div class="work" data-aos="fade-up">
+          <h1 class="projectTitle">Sudoku Solver</h1>
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
     
-
-    <div id="inventorylogscheduler" data-aos="fade-up">
-      <h1 class="projectTitle">Inventory Log Scheduler</h1>
-      <div class="slideshow-container">
-
-        <div class="schedulerSlides fade">
-          <div class="projectImage" id="schedulerslide1"></div>
-          <div class="text">Inventory Log Scheduler is a mock e-commerce website for consumers to track the order delivery.</div>
+            <div class="sudokusolverSlides fade">
+              <div class="projectImage" id="sudokusolverslide1"></div>
+              <div class="text"> Sudoku-solver is an app that solves any Sudoku Puzzle using C and GDB. </div>
+            </div>
+    
+            <div class="sudokusolverSlides fade">
+              <div class="projectImage" id="sudokusolverslide2"></div>
+              <div class="text"> Form an order 3 magic square according to the Siamese method (9 boxes).  </div>
+            </div>
+    
+            <div class="sudokusolverSlides fade">
+              <div class="projectImage" id="sudokusolverslide3"></div>
+              <div class="text">Form an order 13 magic square according to the Siamese method (169 boxes).</div>
+            </div>
+    
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+          </div>
+    
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="sudokuDots" onclick="currentSlide(1, 2)"></span>
+            <span class="sudokuDots" onclick="currentSlide(2, 2)"></span>
+            <span class="sudokuDots" onclick="currentSlide(3, 2)"></span>
+          </div>
+    
+          <!-- Description of project -->
+          <div class="project-description">
+            <p class="p-project">
+              Developed a C Sudoku Solver using the Siamese method for any grid size, 
+              incorporating arrays, command-line arguments, file I/O, pointers, and structures, debugged with GDB.
+            </p>
+            <p class="p-project p-tech">
+              Technologies: C and GDB
+            </p>
+          </div>
+    
+          <!-- Project Links -->
+          <div class="projectLinks">
+            <a href="https://github.com/dth2701/Sudoku-Solver" target="_blank">View Code <img src="/assets/github3.png" /></a>
+            <a href="https://en.wikipedia.org/wiki/Siamese_method" target="_blank">External Source<img src="/assets/externallink2.png" /></a>
+          </div>
+    
         </div>
+        <div class = "work" data-aos="fade-up">
+          <h1 class="projectTitle">Book Mapper</h1>
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+    
+            <div class="bookmapperSlides fade">
+              <div class="projectImage" id="bookmapperslide1"></div>
+              <div class="text"> Book Mapper is a library application to help the users searching books.  </div>
+            </div>
+    
+            <div class="bookmapperSlides fade">
+              <div class="projectImage" id="bookmapperslide2"></div>
+              <div class="text"> Logged-in users can lookup the book's ISBN, searching by title word, and set author name filter. 
+                I am trying to search all the books containing "100" in the title by using option 2. </div>
+            </div>
+    
+            <div class="bookmapperSlides fade">
+              <div class="projectImage" id="bookmapperslide3"></div>
+              <div class="text">Display the list of books whose title contains the word "100."</div>
+            </div>
+    
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+          </div>
+    
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="bookDots" onclick="currentSlide(1, 3)"></span>
+            <span class="bookDots" onclick="currentSlide(2, 3)"></span>
+            <span class="bookDots" onclick="currentSlide(3, 3)"></span>
+          </div>
+    
+          <!-- Description of project -->
+          <div class="project-description">
+            <p class="p-project">
+              My team developed the application to sort through 11,000+ books in CSV format to improve
+              user experience to minimize average searching time.
+              I was in charged on operating system functionality to iterate over all the values to secure, 
+              manipulate and present data.
+            </p>
+            <p class="p-project p-tech">
+              Technologies: Java, Linux(Ubuntu).
+            </p>
+          </div>
+    
+          <!-- Project Links -->
+          <div class="projectLinks">
+            <a href="https://github.com/dth2701/BookMapper" target="_blank">View Code <img src="/assets/github3.png" /></a>
+          </div>
+    
+        </div> 
+        <div class = "worK" data-aos="fade-up">
+          <h1 class="projectTitle">Inventory Log Scheduler</h1>
+          <div class="slideshow-container">  
+            <div class="schedulerSlides fade">
+              <div class="projectImage" id="schedulerslide1"></div>
+              <div class="text">Inventory Log Scheduler is a mock e-commerce website for consumers to track the order delivery.</div>
+            </div>    
+            <div class="schedulerSlides fade">   
+              <div class="projectImage" id="schedulerslide2"></div> 
+              <div class="text">Users can view cart, update item quantities, delete items, and view detailed information for
+                each item. I am using the option 3 to displayy all my delayed orders. </div>
+            </div>
+    
+            <div class="schedulerSlides fade">
+              <div class="projectImage" id="schedulerslide3"></div>
+              <div class="text">Logged-in users may view list of all previous orders. Selecting a past order provides
+                detailed order information.</div>
+            </div>
+    
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+          </div>
+    
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="schedulerDots" onclick="currentSlide(1, 4)"></span>
+            <span class="schedulerDots" onclick="currentSlide(2, 4)"></span>
+            <span class="schedulerDots" onclick="currentSlide(3, 4)"></span>
+          </div>
+    
+          <!-- Description of project -->
+          <div class="project-description">
+            <p class="p-project">
+              My team produced an application to streamline and incentivize delivery orders organization
+              stored in HTML format for customers.
+              I was in charged for devising initial algorithm to improve reliability, security, and maintainability of the system.
+            </p>
+            <p class="p-project p-tech">
+              Technologies: Java, Linux(Ubuntu), HTML.
+            </p>
+          </div>
 
-        <div class="schedulerSlides fade">
-
-          <div class="projectImage" id="schedulerslide2"></div>
-
-          <div class="text">Users can view cart, update item quantities, delete items, and view detailed information for
-            each item. I am using the option 3 to displayy all my delayed orders. </div>
         </div>
-
-        <div class="schedulerSlides fade">
-
-          <div class="projectImage" id="schedulerslide3"></div>
-
-          <div class="text">Logged-in users may view list of all previous orders. Selecting a past order provides
-            detailed order information.</div>
+        <div class = "worK" data-aos="fade-up">
+          <h1 class="projectTitle">Capitol Path</h1>
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+      
+            <div class="capitolpathSlides fade">
+              <div class="projectImage" id="capitolpathslide1"></div>
+              <div class="text"> As a Google map, Capitol Math would help users find the shortest path between states using capitols' coordinates. </div>
+            </div>
+      
+            <div class="capitolpathSlides fade">
+              <div class="projectImage" id="capitolpathslide2"></div>
+              <div class="text"> Logged-in users can lookup the information of capitiols and display the path so the user can save time.</div>
+            </div>
+      
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+          </div>
+        
+      
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="capitolDots" onclick="currentSlide(1, 5)"></span>
+            <span class="capitolDots" onclick="currentSlide(2, 5)"></span>
+          </div>
+      
+          <!-- Description of project -->
+          <div class="project-description">
+            <p class="p-project">
+              My team developed the application to find the shortest path between two selected capitol states.
+              I was in charged in transferring 50 state capitals onto the DOT format and convert data onto memory drives.
+            </p>
+            <p class="p-project p-tech">
+              Technologies: Java, Linux(Ubuntu), DOT.
+            </p>
+          </div>
+      
+          <!-- Project Links -->
+          <div class="projectLinks">
+            <a href="https://github.com/dth2701/-Capitol-Paths" target="_blank">View Code <img src="/assets/github3.png" /></a>
+          </div>
         </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
       </div>
-      <br>
-
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="schedulerDots" onclick="currentSlide(1, 4)"></span>
-        <span class="schedulerDots" onclick="currentSlide(2, 4)"></span>
-        <span class="schedulerDots" onclick="currentSlide(3, 4)"></span>
-      </div>
-
-      <!-- Description of project -->
-      <div class="project-description">
-        <p class="p-project">
-          My team produced an application to streamline and incentivize delivery orders organization
-          stored in HTML format for customers.
-          I was in charged for devising initial algorithm to improve reliability, security, and maintainability of the system.
-        </p>
-        <p class="p-project p-tech">
-          Technologies: Java, Linux(Ubuntu), HTML.
-        </p>
-      </div>
-
-      <!-- Project Links -->
-      <div class="projectLinks">
-        <a href="https://github.com/dth2701/Inventory-Log-Scheduler" target="_blank">View Code <img src="/assets/github3.png" /></a>
-
-      </div>
-
     </div>
-
-  <div id="capitolpath" data-aos="fade-up">
-    <h1 class="projectTitle">Capitol Path</h1>
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
-
-      <div class="capitolpathSlides fade">
-        <div class="projectImage" id="capitolpathslide1"></div>
-        <div class="text"> As a Google map, Capitol Math would help users find the shortest path between states using capitols' coordinates. </div>
-      </div>
-
-      <div class="capitolpathSlides fade">
-        <div class="projectImage" id="capitolpathslide2"></div>
-        <div class="text"> Logged-in users can lookup the information of capitiols and display the path so the user can save time.</div>
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
-    </div>
-    <br>
-
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-      <span class="capitolDots" onclick="currentSlide(1, 5)"></span>
-      <span class="capitolDots" onclick="currentSlide(2, 5)"></span>
-    </div>
-
-    <!-- Description of project -->
-    <div class="project-description">
-      <p class="p-project">
-        My team developed the application to find the shortest path between two selected capitol states.
-        I was in charged in transferring 50 state capitals onto the DOT format and convert data onto memory drives.
-      </p>
-      <p class="p-project p-tech">
-        Technologies: Java, Linux(Ubuntu), DOT.
-      </p>
-    </div>
-
-    <!-- Project Links -->
-    <div class="projectLinks">
-      <a href="https://github.com/dth2701/-Capitol-Paths" target="_blank">View Code <img src="/assets/github3.png" /></a>
-    </div>
-
-  </div>
   </div>
 
   <div id="aboutMe">
