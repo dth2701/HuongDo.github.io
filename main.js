@@ -46,7 +46,6 @@ const navSlide = () => {
 };
 
 navSlide();
-
 // index of each deck, initialized to first slide for each deck
 let slideIndex = [1, 1, 1, 1, 1, 1];
 
