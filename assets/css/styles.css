@@ -735,16 +735,12 @@ svg {
     margin-inline: 1rem;
   }
 
-  .skills__content {
-    grid-template-columns: max-content;
-    row-gap: 1rem;
-  }
-
   .services__card {
     padding-block: 1.5rem;
   }
   #skillsMain {
-    flex-direction: row;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
   }
 }
 
@@ -872,7 +868,7 @@ svg {
   .skills__description {
     margin-bottom: 3rem;
   }
-  .skills__content {
+  .skillsMain {
     column-gap: 8rem;
   }
   .skills__group {
