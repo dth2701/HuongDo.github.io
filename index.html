@@ -1,638 +1,725 @@
 <!DOCTYPE html>
-<html lang="en">
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-  <title>Huong (Amy) Do</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="/cat.jpeg">
-  <link rel="icon" type="image/png" sizes="32x32" href="/cat.jpeg">
-  <link rel="icon" type="image/png" sizes="16x16" href="/cat.jpeg">
-  <link rel="manifest" href="/site.webmanifest">
-</head>
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/cat-icon.png" type="image/x-icon">
 
-<body>
-  <nav>
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+      <!-- box icons -->
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
 
-    <a href="#top" id="logo">
-      C
-    </a>
+      <title>Huong(Amy) Do portfolio website</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+               Huong (Amy) <span>Do</span>
+            </a>
 
-    <ul class="nav-links">
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#home" class="nav__link active-link">Home</a>
+                  </li>
 
-      <li><a href="#projects" id="linkProjects">Portfolio</a></li>
-      <li><a href="#aboutMe" id="linkAboutMe">About</a></li>
-      <li><a href="#resume" id="linkResume">Resume</a></li>
-      <li><a href="#contact" id="linkContact">Contact</a></li>
-      <li><a href="https://github.com/dth2701" id="linkGithub" target="_blank">Github</a></li>
-      <li><a href="https://www.linkedin.com/in/huong-thien-do/" id="linkLinkedIn" target="_blank">LinkedIn</a></li>
-    </ul>
-    <div class="burger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-  </nav>
-  <div id="top">
-    <div id="nameDiv">
-      <h2 id="helloh2" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="150"
-        data-aos="fade-up">Hello! My name is </h2>
-      <h2 id="nameh1" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="300"
-        data-aos="fade-up">
-        Huong (Amy) Do.</h2>
-      
-        <h3 id="seh2" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="450"
-        data-aos="fade-up">
-        Currenly working as
-        <span style="color:rgb(255, 134, 173)">Web Developer</span>
-         at UW-Madison.
-      </h3> 
-      
-      <h3 id="seh2" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="450"
-        data-aos="fade-up">
-        Working as
-        <span style="color:rgb(255, 134, 173)">SWE intern</span>
-         at TANAAKK in Summer 2023.
-      </h3> 
+                  <li class="nav__item">
+                     <a href="#about" class="nav__link">About</a>
+                  </li>
 
-      <h3 id="seh2" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="450"
-        data-aos="fade-up">
-        A  
-        <span style="color:rgb(255, 134, 173)">CS</span>
-         rising Senior at UW-Madison.
-      </h3>
+                  <li class="nav__item">
+                     <a href="#services" class="nav__link">Services</a>
+                  </li>
 
-      <h3 id="seh2" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="450"
-        data-aos="fade-up">
-        Seeking for 
-        <span style="color:rgb(255, 134, 173)">SWE Internship/Co-op</span>
-        !
-      </h3>
+                  <li class="nav__item">
+                     <a href="#projects" class="nav__link">Projects</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="assets/img/Amy_Resume_FE_Internship_2024.pdf" class="nav__link">Resume</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#contact" class="nav__link">Contact</a>
+                  </li>
+               </ul>
 
-    </div>
-    <div data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="600" data-aos="fade-up"
-      id="projectButton">
-      <a href="#projects">View Portfolio</a>
-    </div>
-  </div>
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
 
-  <div id="portfolio">
-    <div>
-      <div id="projectsTitle" data-aos="fade-up">
-        <h1>Projects</h1>
-      </div>
-      <div class="work-list"  >
-        <div class="work" data-aos="fade-up">
-            <h1 class="projectTitle">Movie Finder</h1>
-            <!-- Slideshow container -->
-            <div class="slideshow-container">
-        
-              <div class="moviefinderSlides fade">
-                <div class="projectImage" id="moviefinderslide1"></div>
-                <div class="text"> Movie Finder is an a responsive web application 
-                  that allows users to search, explore, and gain detailed insights into movies, leveraging React.js, HTML, CSS, and interfacing with The Movie Database API. </div>
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <div class="home__content">
+                  <div class="home__data">
+                     <h3 class="home__subtitle">
+                        Hello, <span>I’m</span>
+                     </h3>
+   
+                     <h1 class="home__title">Huong(Amy) Do</h1>
+   
+                     <h3 class="home__education">A CS Senior at UW-Madison</h3>
+   
+                     <p class="home__description">
+                        With knowledge in full-stack development, I offer the best projects resulting 
+                        in quality work.
+                     </p>
+   
+                     <a href="#contact" class="button">Let's Talk</a>
+                  </div>
+
+                  <div class="home__social">
+                     <a href="https://github.com/dth2701" target="_blank" class="home__social-link">
+                        <i class="ri-github-fill"></i>
+                     </a>
+
+                     <a href="https://www.linkedin.com/in/huong-thien-do/" target="_blank" class="home__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                     </a>
+
+                     <a href="https://www.instagram.com/dth.2701" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="home__image">
+                  <svg class="home__blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
+                     <mask id="maskBlob" mask-type="alpha">
+                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+                     </mask>
+                     <g mask="url(#maskBlob)">
+                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+                  
+                        <rect x="37" width="476" height="630" fill="url(#pattern0)"/>
+                     </g>
+                  
+                     <rect x="37" width="476" height="300" fill="url(#pattern1)"/>
+                  
+                     <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <!-- Insert your profile (recommended size: 640 x 940) -->
+                        <image class="home__img" id="imageBlob" width="640" height="925" href="assets/img/myPicture.png"/>
+                     </defs>
+                  </svg>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+               <div class="about__data">
+                  <h3 class="section__subtitle">
+                     My <span>Achievements</span>
+                  </h3>
+                  <h2 class="section__title">
+                     Work Experiences
+                  </h2>
+                  <div class = "workeduc-box">
+                     <div class = "workeduc-content" >
+                        <span class ="year"><i class='bx bxs-calendar'></i>09/2023 - Present</span>
+                        <h4>Student Frontend Engineer for Office of Human Resources at UW-Madison</h4>
+                        <p>- Developed and maintained OHR websites and applications using PHP/MySQL, JSON/jQuery, JavaScript frameworks (AngularJS, React), and SASS tool, resulting in efficient and responsive designs.</p>
+                     </div>
+             
+
+                     <div class = "workeduc-content" >
+                        <span class ="year"><i class='bx bxs-calendar'></i>05/2023 - 08/2023</span>
+                        <h4>SWE Intern at TANAAKK</h4>
+                        <p>- Collaborated within a global team to develop Icuco, a web-based platform offering time management solutions tailored for kindergarten management systems using React.js.</p>
+                        <p>- Contributed to developing proficiency in Java Spring and SQL, enhanced backend operations, and managed a database consisting of 500,000+ records.</p>
+                     </div>
+
+                     <div class = "workeduc-content" >
+                        <span class ="year"><i class='bx bxs-calendar'></i>01/2023 - Present</span>
+                        <h3>Academic Tutor at UW-Madison</h3>
+                        <p>- Reinforced course content, assignments, and material for 300+ students in introductory CS courses weekly.</p>
+                        <p>Courses: CS354(Machine Organization and Programming)</p>
+                     </div>
+                  </div>
+                  <!-- <h2 class="section__title">
+                     About Me
+                  </h2>
+
+                  <p class="about__description">
+                     Frontend developer, I create web pages with 
+                     UI / UX user interface, I have years of 
+                     experience and many clients are happy with the 
+                     projects carried out.
+                  </p> -->
+
+                  <a href="#contact" class="button">Contact Me</a>
+               </div>
+
+               <div class="about__image">
+                  <svg class="about__blob" viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <mask id="maskBorder" mask-type="alpha">
+                        <path d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
+                        171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
+                        448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
+                        270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
+                        439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z" fill="black"/>
+                     </mask>
+                     <g mask="url(#maskBorder)">
+                        <rect x="37" width="476" height="630" fill="url(#pattern2)"/>
+                        
+                        <path d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
+                        192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
+                        580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
+                        40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
+                        175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black" stroke-width="10"/>
+                     </g>
+                  
+                     <rect x="37" width="476" height="300" fill="url(#pattern3)"/>
+                  
+                     <defs>
+                        <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <!-- Insert your profile (recommended size: 640 x 940) -->
+                        <image class="about__img" id="imageBorder" width="640" height="940" href="assets/img/myPicture.png"/>
+                     </defs>
+                  </svg>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SKILLS ====================-->
+
+
+         <section class="skills section" id="skillsDiv">
+            <h3 class="section__subtitle">
+               My <span>Technologies</span>
+            </h3>
+
+            <h2 class="section__title">
+               Technologies I've worked with
+            </h2>
+
+            <div id="skillsMain">
+              <div class="techDiv" id="frontend" data-aos="fade-up">
+                <div class="techDivTitle">
+                  Frontend
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/reactlogo2.png" alt="React / React Native" />
+                  <span class="tooltiptext">React / React Native</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/htmllogo.png" alt="HTML" />
+                  <span class="tooltiptext">HTML</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/csslogo.png" alt="CSS" />
+                  <span class="tooltiptext">CSS</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/jslogo.png" alt="JavaScript" />
+                  <span class="tooltiptext">JavaScript</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/nodelogo.png" alt="Node.js" />
+                  <span class="tooltiptext">Node.js</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/angular.png" alt="Angular.js" />
+                  <span class="tooltiptext">Angular.js</span>
+                </div>
               </div>
-      
-              <div class="moviefinderSlides fade">
-                <div class="projectImage" id="moviefinderslide2"></div>
-                <div class="text"> The 'movies by genres' feature allow users to effortlessly browse and discover films based on specific genres. 
-                  By selecting a genre from a well-organized list, users are presented with a curated selection of movies that fit their chosen category. 
-                  This feature enhances user experience by providing targeted and relevant content, catering to individual preferences and interests.</div>
-              </div>
-      
-              <!-- Next and previous buttons -->
-              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-            </div>
-      
-            <!-- The dots/circles -->
-            <div style="text-align:center; width: 650px; padding-top: 10px;">
-              <span class="movieDots" onclick="currentSlide(1, 0)"></span>
-              <span class="movieDots" onclick="currentSlide(2, 0)"></span>
-            </div>
-      
-            <!-- Description of project -->
-            <div class="project-description">
-              <p class="p-project">
-                Developed a user-centric movie recommendation web application,
-                utilizing React.js and The Movie Database API to deliver personalized film suggestions and detailed movie information.
-              </p>
-              <p class="p-project p-tech">
-                Technologies: React, JavaScript, HTML, CSS.
-              </p>
-            </div>
-      
-            <!-- Project Links -->
-            <div class="projectLinks">
-              <a href="https://github.com/dth2701/Movie-Finder" target="_blank">View Code <img src="/assets/github3.png" /></a>
-              <a href="https://dth2701.github.io/Movie-Finder" target="_blank">Demo<img src="/assets/externallink2.png" /></a>
-            </div>
-        </div>
-        <div class="work" data-aos="fade-up">
-          <h1 class="projectTitle">Weather App</h1>
-          <!-- Slideshow container -->
-          <div class="slideshow-container">
-      
-            <div class="weatherappSlides fade">
-              <div class="projectImage" id="weatherappslide1"></div>
-              <div class="text"> Weather condition in Wisconsin, Madison.
-              </div>
-            </div>
-      
-            <div class="weatherappSlides fade">
-              <div class="projectImage" id="weatherappslide2"></div>
-              <div class="text"> Weather condition in Hanoi, Vietnam.</div>
-            </div>
-      
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-          </div>
-      
-          <!-- The dots/circles -->
-          <div style="text-align:center; width: 650px; padding-top: 10px;">
-            <span class="weatherDots" onclick="currentSlide(1, 1)"></span>
-            <span class="weatherDots" onclick="currentSlide(2, 1)"></span>
-          </div>
-      
-          <!-- Description of project -->
-          <div class="project-description">
-            <p class="p-project">
-              "Weather App" is a clean and user-friendly web application designed to provide real-time weather information.
-              It allows users to search for weather conditions in specific locations, displaying details such as temperature, humidity, wind speed, and general conditions.
-            </p>
-            <p class="p-project p-tech">
-              Technologies: React, JavaScript, HTML, CSS.
-            </p>
-          </div>
-      
-          <!-- Project Links -->
-          <div class="projectLinks">
-            <a href="https://github.com/dth2701/weather-app" target="_blank">View Code <img src="/assets/github3.png" /></a>
-            <a href="https://dth2701.github.io/weather-app" target="_blank">Demo<img src="/assets/externallink2.png" /></a>
-          </div>
-        </div>
-        <div class="work" data-aos="fade-up">
-          <h1 class="projectTitle">Sudoku Solver</h1>
-          <!-- Slideshow container -->
-          <div class="slideshow-container">
-    
-            <div class="sudokusolverSlides fade">
-              <div class="projectImage" id="sudokusolverslide1"></div>
-              <div class="text"> Sudoku-solver is an app that solves any Sudoku Puzzle using C and GDB. </div>
-            </div>
-    
-            <div class="sudokusolverSlides fade">
-              <div class="projectImage" id="sudokusolverslide2"></div>
-              <div class="text"> Form an order 3 magic square according to the Siamese method (9 boxes).  </div>
-            </div>
-    
-            <div class="sudokusolverSlides fade">
-              <div class="projectImage" id="sudokusolverslide3"></div>
-              <div class="text">Form an order 13 magic square according to the Siamese method (169 boxes).</div>
-            </div>
-    
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
-          </div>
-    
-          <!-- The dots/circles -->
-          <div style="text-align:center; width: 650px; padding-top: 10px;">
-            <span class="sudokuDots" onclick="currentSlide(1, 2)"></span>
-            <span class="sudokuDots" onclick="currentSlide(2, 2)"></span>
-            <span class="sudokuDots" onclick="currentSlide(3, 2)"></span>
-          </div>
-    
-          <!-- Description of project -->
-          <div class="project-description">
-            <p class="p-project">
-              Developed a C Sudoku Solver using the Siamese method for any grid size, 
-              incorporating arrays, command-line arguments, file I/O, pointers, and structures, debugged with GDB.
-            </p>
-            <p class="p-project p-tech">
-              Technologies: C and GDB
-            </p>
-          </div>
-    
-          <!-- Project Links -->
-          <div class="projectLinks">
-            <a href="https://github.com/dth2701/Sudoku-Solver" target="_blank">View Code <img src="/assets/github3.png" /></a>
-            <a href="https://en.wikipedia.org/wiki/Siamese_method" target="_blank">External Source<img src="/assets/externallink2.png" /></a>
-          </div>
-    
-        </div>
-        <div class = "work" data-aos="fade-up">
-          <h1 class="projectTitle">Book Mapper</h1>
-          <!-- Slideshow container -->
-          <div class="slideshow-container">
-    
-            <div class="bookmapperSlides fade">
-              <div class="projectImage" id="bookmapperslide1"></div>
-              <div class="text"> Book Mapper is a library application to help the users searching books.  </div>
-            </div>
-    
-            <div class="bookmapperSlides fade">
-              <div class="projectImage" id="bookmapperslide2"></div>
-              <div class="text"> Logged-in users can lookup the book's ISBN, searching by title word, and set author name filter. 
-                I am trying to search all the books containing "100" in the title by using option 2. </div>
-            </div>
-    
-            <div class="bookmapperSlides fade">
-              <div class="projectImage" id="bookmapperslide3"></div>
-              <div class="text">Display the list of books whose title contains the word "100."</div>
-            </div>
-    
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
-          </div>
-    
-          <!-- The dots/circles -->
-          <div style="text-align:center; width: 650px; padding-top: 10px;">
-            <span class="bookDots" onclick="currentSlide(1, 3)"></span>
-            <span class="bookDots" onclick="currentSlide(2, 3)"></span>
-            <span class="bookDots" onclick="currentSlide(3, 3)"></span>
-          </div>
-    
-          <!-- Description of project -->
-          <div class="project-description">
-            <p class="p-project">
-              My team developed the application to sort through 11,000+ books in CSV format to improve
-              user experience to minimize average searching time.
-              I was in charged on operating system functionality to iterate over all the values to secure, 
-              manipulate and present data.
-            </p>
-            <p class="p-project p-tech">
-              Technologies: Java, Linux(Ubuntu).
-            </p>
-          </div>
-    
-          <!-- Project Links -->
-          <div class="projectLinks">
-            <a href="https://github.com/dth2701/BookMapper" target="_blank">View Code <img src="/assets/github3.png" /></a>
-          </div>
-    
-        </div> 
-        <div class = "worK" data-aos="fade-up">
-          <h1 class="projectTitle">Inventory Log Scheduler</h1>
-          <div class="slideshow-container">  
-            <div class="schedulerSlides fade">
-              <div class="projectImage" id="schedulerslide1"></div>
-              <div class="text">Inventory Log Scheduler is a mock e-commerce website for consumers to track the order delivery.</div>
-            </div>    
-            <div class="schedulerSlides fade">   
-              <div class="projectImage" id="schedulerslide2"></div> 
-              <div class="text">Users can view cart, update item quantities, delete items, and view detailed information for
-                each item. I am using the option 3 to displayy all my delayed orders. </div>
-            </div>
-    
-            <div class="schedulerSlides fade">
-              <div class="projectImage" id="schedulerslide3"></div>
-              <div class="text">Logged-in users may view list of all previous orders. Selecting a past order provides
-                detailed order information.</div>
-            </div>
-    
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
-          </div>
-    
-          <!-- The dots/circles -->
-          <div style="text-align:center; width: 650px; padding-top: 10px;">
-            <span class="schedulerDots" onclick="currentSlide(1, 4)"></span>
-            <span class="schedulerDots" onclick="currentSlide(2, 4)"></span>
-            <span class="schedulerDots" onclick="currentSlide(3, 4)"></span>
-          </div>
-    
-          <!-- Description of project -->
-          <div class="project-description">
-            <p class="p-project">
-              My team produced an application to streamline and incentivize delivery orders organization
-              stored in HTML format for customers.
-              I was in charged for devising initial algorithm to improve reliability, security, and maintainability of the system.
-            </p>
-            <p class="p-project p-tech">
-              Technologies: Java, Linux(Ubuntu), HTML.
-            </p>
-          </div>
-
-        </div>
-        <div class = "worK" data-aos="fade-up">
-          <h1 class="projectTitle">Capitol Path</h1>
-          <!-- Slideshow container -->
-          <div class="slideshow-container">
-      
-            <div class="capitolpathSlides fade">
-              <div class="projectImage" id="capitolpathslide1"></div>
-              <div class="text"> As a Google map, Capitol Math would help users find the shortest path between states using capitols' coordinates. </div>
-            </div>
-      
-            <div class="capitolpathSlides fade">
-              <div class="projectImage" id="capitolpathslide2"></div>
-              <div class="text"> Logged-in users can lookup the information of capitiols and display the path so the user can save time.</div>
-            </div>
-      
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
-          </div>
         
-      
-          <!-- The dots/circles -->
-          <div style="text-align:center; width: 650px; padding-top: 10px;">
-            <span class="capitolDots" onclick="currentSlide(1, 5)"></span>
-            <span class="capitolDots" onclick="currentSlide(2, 5)"></span>
-          </div>
-      
-          <!-- Description of project -->
-          <div class="project-description">
-            <p class="p-project">
-              My team developed the application to find the shortest path between two selected capitol states.
-              I was in charged in transferring 50 state capitals onto the DOT format and convert data onto memory drives.
-            </p>
-            <p class="p-project p-tech">
-              Technologies: Java, Linux(Ubuntu), DOT.
-            </p>
-          </div>
-      
-          <!-- Project Links -->
-          <div class="projectLinks">
-            <a href="https://github.com/dth2701/-Capitol-Paths" target="_blank">View Code <img src="/assets/github3.png" /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="aboutMe">
-    <div id="aboutMeTitle" data-aos="fade-up">
-      <h1>About Me</h1>
-    </div>
-
-    <div id="aboutMeMain">
-      <div id="selfpic" data-aos="fade-up"></div>
-
-      <p data-aos="fade-up" id="pIntro1">
-        It's Huong(Amy) Do. My overarching career interest lies in software engineering, 
-        particularly focusing on frontend development and user experience design. 
-        My journey in this realm began during my academic endeavors at the University of Wisconsin- Madison, 
-        and was refined through my professional experiences including Front-end Developer, and Software Engineer Intern at TANAAKK.
-      </p>
-      <p data-aos="fade-up" id="pIntro2">
-        Inspired by the belief that "Girls Can Code," 
-        I have actively involved with the Association for Women in Computing (WACM). 
-        I aim to not only contribute technically to the field but also inspire and support the next generation of female coders,
-        ensuring they recognize and unleash their potential within the ever-expanding digital frontier.
-      </p>
-    </div>
-  </div>
-
-  <div id="skillsDiv">
-    <div id="techTitle" data-aos="fade-up">
-      <h3>Technologies I've Worked With</h3>
-    </div>
-    <div id="skillsMain">
-      <div class="techDiv" id="frontend" data-aos="fade-up">
-        <div class="techDivTitle">
-          Frontend
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/reactlogo2.png" alt="React / React Native" />
-          <span class="tooltiptext">React / React Native</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/htmllogo.png" alt="HTML" />
-          <span class="tooltiptext">HTML</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/csslogo.png" alt="CSS" />
-          <span class="tooltiptext">CSS</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/jslogo.png" alt="JavaScript" />
-          <span class="tooltiptext">JavaScript</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/nodelogo.png" alt="Node.js" />
-          <span class="tooltiptext">Node.js</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/angular.png" alt="Angular.js" />
-          <span class="tooltiptext">Angular.js</span>
-        </div>
-      </div>
-
-      <div class="techDiv" id="backend" data-aos="fade-up">
-        <div class="techDivTitle">
-          Backend
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/sql.png" alt="SQL" />
-          <span class="tooltiptext">SQL</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/springbootlogo.png" alt="Spring Boot" />
-          <span class="tooltiptext">Java Spring Boot</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/mySQL.png" alt="mySQL" />
-          <span class="tooltiptext">mySQL</span>
-        </div>
-      </div>
-
-      <div class="techDiv" id="devops" data-aos="fade-up">
-        <div class="techDivTitle">
-          DevOps
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/gitlogo.png" alt="Git" />
-          <span class="tooltiptext">Git</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/githublogo.png" alt="Github" />
-          <span class="tooltiptext">Github</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/ubuntu.png" alt="ubuntu" />
-          <span class="tooltiptext">Ubuntu</span>
-        </div>
-      </div>
-
-      <div class="techDiv" id="languages" data-aos="fade-up">
-        <div class="techDivTitle">
-          Languages
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/java.png" alt="Java" />
-          <span class="tooltiptext">Java</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/jslogo.png" alt="JavaScript" />
-          <span class="tooltiptext">JavaScript</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/python.png" alt="Python" />
-          <span class="tooltiptext">Python</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/csharplogo.png" alt="C#" />
-          <span class="tooltiptext">C#</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/c++.png" alt="C++" />
-          <span class="tooltiptext">C++</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/julia.png" alt="Julia" />
-          <span class="tooltiptext">Julia 1.8.5</span>
-        </div>
-      </div>
-
-      <div class="techDiv" id="tools" data-aos="fade-up">
-        <div class="techDivTitle">
-          Tools
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/vscode.png" alt="VS Code" />
-          <span class="tooltiptext">VS Code</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/IntelliJ_IDEA.png" alt="IntelliJ" />
-          <span class="tooltiptext">IntelliJ</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/eclipse.png" alt="Eclipse" />
-          <span class="tooltiptext">Eclipse</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/linux.png" alt="Linux" />
-          <span class="tooltiptext">Linux</span>
-        </div>
+              <div class="techDiv" id="backend" data-aos="fade-up">
+                <div class="techDivTitle">
+                  Backend
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/sql.png" alt="SQL" />
+                  <span class="tooltiptext">SQL</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/springbootlogo.png" alt="Spring Boot" />
+                  <span class="tooltiptext">Java Spring Boot</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/mySQL.png" alt="mySQL" />
+                  <span class="tooltiptext">mySQL</span>
+                </div>
+              </div>
         
-      </div>
+              <div class="techDiv" id="devops" data-aos="fade-up">
+                <div class="techDivTitle">
+                  DevOps
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/gitlogo.png" alt="Git" />
+                  <span class="tooltiptext">Git</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/githublogo.png" alt="Github" />
+                  <span class="tooltiptext">Github</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/ubuntu.png" alt="ubuntu" />
+                  <span class="tooltiptext">Ubuntu</span>
+                </div>
+              </div>
+        
+              <div class="techDiv" id="languages" data-aos="fade-up">
+                <div class="techDivTitle">
+                  Languages
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/java.png" alt="Java" />
+                  <span class="tooltiptext">Java</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/jslogo.png" alt="JavaScript" />
+                  <span class="tooltiptext">JavaScript</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/python.png" alt="Python" />
+                  <span class="tooltiptext">Python</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/csharplogo.png" alt="C#" />
+                  <span class="tooltiptext">C#</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/c++.png" alt="C++" />
+                  <span class="tooltiptext">C++</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/julia.png" alt="Julia" />
+                  <span class="tooltiptext">Julia 1.8.5</span>
+                </div>
+              </div>
+        
+              <div class="techDiv" id="tools" data-aos="fade-up">
+                <div class="techDivTitle">
+                  Tools
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/vscode.png" alt="VS Code" />
+                  <span class="tooltiptext">VS Code</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/IntelliJ_IDEA.png" alt="IntelliJ" />
+                  <span class="tooltiptext">IntelliJ</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/eclipse.png" alt="Eclipse" />
+                  <span class="tooltiptext">Eclipse</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/linux.png" alt="Linux" />
+                  <span class="tooltiptext">Linux</span>
+                </div>
+                
+              </div>
+        
+              <div class="techDiv" id="testing" data-aos="fade-up">
+                <div class="techDivTitle">
+                  Working
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/uwmadison.png" alt="uwmadison" />
+                  <span class="tooltiptext">CS Student</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/tutor.png" alt="tutor" />
+                  <span class="tooltiptext">CS Academic Tutor</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/wacm.png" alt="wacm" />
+                  <span class="tooltiptext">Association for Women in Computing</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/longcafe.png" alt="longcafe" />
+                  <span class="tooltiptext">Manager at Long Cafe Company</span>
+                </div>
+                <div class="tech tooltip">
+                  <img src="/assets/tech/unt.png" alt="researcher" />
+                  <span class="tooltiptext">STEM Researcher</span>
+                </div>
+        
+              </div>
+            </div>
+         </section>
 
-      <div class="techDiv" id="testing" data-aos="fade-up">
-        <div class="techDivTitle">
-          Working
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/uwmadison.png" alt="uwmadison" />
-          <span class="tooltiptext">CS Student</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/tutor.png" alt="tutor" />
-          <span class="tooltiptext">CS Academic Tutor</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/wacm.png" alt="wacm" />
-          <span class="tooltiptext">Association for Women in Computing</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/longcafe.png" alt="longcafe" />
-          <span class="tooltiptext">Manager at Long Cafe Company</span>
-        </div>
-        <div class="tech tooltip">
-          <img src="/assets/tech/unt.png" alt="researcher" />
-          <span class="tooltiptext">STEM Researcher</span>
-        </div>
+         <!--==================== SERVICES ====================-->
+         <section class="services section" id="services">
+            <h3 class="section__subtitle">
+               My <span>Services</span>
+            </h3>
 
-      </div>
-    </div>
-  </div>
+            <h2 class="section__title">
+               What I Do
+            </h2>
 
-  <div id="hobbies">
-    <div id="hobbiesTitle" data-aos="fade-up">
-      <h3>Hobbies & Interests</h3>
-    </div>
-    <div id="hobbiesMain">
-      <div id="hobbiesPics">
-        <div class="hobbiesIcon" id="skincare" data-aos="flip-left" data-aos-anchor="#hobbiesPics"
-          data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="gym" data-aos="flip-left" data-aos-delay="450" data-aos-anchor="#hobbiesPics"
-          data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="photography" data-aos="flip-left" data-aos-delay="600" data-aos-anchor="#hobbiesPics"
-          data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="travel" data-aos="flip-left" data-aos-delay="150" data-aos-anchor="#hobbiesPics"
-          data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="coffee" data-aos="flip-left" data-aos-delay="900" data-aos-anchor="#hobbiesPics"
-          data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="twice" data-aos="flip-left" data-aos-delay="1050" data-aos-anchor="#hobbiesPics"
-          data-aos-anchor-placment="top-center"></div>
-      </div>
+            <div class="services__container container grid">
+               <article class="services__card">
+                  <i class="ri-layout-3-line services__icon"></i>
 
-      <p data-aos="fade-up" id="p2">
-        Besides my passion for coding, I appreciate the various aspects of self-care, such as skincare and gymming.
-        I love capturing my authentic self wearing pretty clothes on social media.I am also into travelling and try more new local coffee shops.
-        I am a huge fan of Twice, a Korean girl group. You will definitely find me lipsync their songs every time!
-      </p>
-    </div>
-  </div>
+                  <h2 class="services__title">Front-end Developer</h2>
 
-  <div id="resume">
-    <div id="resumeTitle" data-aos="fade-up">
-      <h1>Resume</h1>
-    </div>
-    <div id="resumeMain" data-aos="fade-up">
-      <a id="resumeView" href="/assets/Amy_Resume_Internship_2024.pdf" target="_blank">View Resume
-        <img src="/assets/viewfile.png" />
+                  <p class="services__description">
+                     Background in creating responsive and accessible user interfaces utilizing advanced JavaScript frameworks like AngularJS and React, adept in CSS pre-processing with SASS, 
+                     and skilled in leveraging Bootstrap for layout and design consistency across various web applications.
+                  </p>
+               </article>
+
+               <article class="services__card">
+                  <i class="bx bx-laptop services__icon"></i>
+
+                  <h2 class="services__title">Back-end Developer</h2>
+
+                  <p class="services__description">
+                     Proficient in Java for robust server-side operations, adept at SQL for complex database management, 
+                     and skilled in utilizing Git for version control and collaboration across expansive codebases
+                  </p>
+               </article>
+
+
+            </div>
+         </section>
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            <h3 class="section__subtitle">
+               My <span>Projects</span>
+            </h3>
+            <h2 class="section__title">
+               Recent Projects
+            </h2>
+            <!-- div.projects.container. -->
+            <div class="projects__container container grid">
+               <article class="projects__card">
+                  <img src="assets/img/social-to-do-app.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Full-Stack Mobile App</span>
+
+                     <h2 class="projects__title">Social To Do</h2>
+                     <p class = "card__text">Co-developed a React Native and Flask-based mobile app for UW students, integrating task management with social
+                        networking. Focused on backend integration using Flask, SQLite, and Firebase for efficient data handling and Azure
+                        for cloud hosting.
+                     </p>
+                     <p class = "card__text">Technologies: React Native, JavaScript, Flask, SQLite.</p>
+                     <a href="https://github.com/A9ine/Social-To-Do" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/movie-finder-app.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Movie Finder</h2>
+                     <p class = "card__text">Developed a user-centric movie recommendation web application, 
+                        utilizing React.js and The Movie Database API to deliver personalized film suggestions and detailed movie information.
+                     </p>
+                     <p class = "card__text">Technologies: React, JavaScript, HTML, CSS.</p>
+
+                     <a href="https://dth2701.github.io/Movie-Finder" class="projects__button">
+                        Demo <i class="ri-external-link-line"></i>
+                     </a>
+                     <a href="https://github.com/dth2701/Movie-Finder" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/wisconsin-lighthouse.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Exploration Game</span>
+
+                     <h2 class="projects__title">Wisconsin Lighthouse</h2>
+                     <p class = "card__text">Co-developed an interactive digital lighthouse experience developed 
+                        using the Godot game engine, featuring immersive 3D scenes, and dynamic user interactions through Focus Observers, 
+                        offering a unique blend of education and exploration within a virtual lighthouse environment.
+                     </p>
+                     <p class = "card__text">Technologies: C#, Godot 4.0</p>
+                     <a href="https://illuminate-wisc.github.io/Lighthouse/" class="projects__button">
+                        Demo <i class="ri-external-link-line"></i>
+                     </a>
+                     <a href="https://github.com/Illuminate-Wisc/Lighthouse" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/weather-app.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Weather App</h2>
+
+                     <p class = "card__text">"Weather App" is a clean and user-friendly web application designed to provide real-time weather information. 
+                        It allows users to search for weather conditions in specific locations,
+                        displaying details such as temperature, humidity, wind speed, and general conditions.
+                     </p>
+                     <p class = "card__text">Technologies: React, JavaScript, HTML, CSS.</p>
+
+                     <a href="https://dth2701.github.io/weather-app/" class="projects__button">
+                        Demo <i class="ri-external-link-line"></i>
+                     </a>
+                     <a href="https://github.com/dth2701/weather-app" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/SiameseMethod.gif" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+
+                     <h2 class="projects__title">Sudoku Solver</h2>
+                     <p class = "card__text">Developed a C Sudoku Solver using the Siamese method for any grid size, 
+                        incorporating arrays, command-line arguments, file I/O, pointers, and structures, debugged with GDB.
+                     </p>
+                     <p class = "card__text">Technologies: C and GDB</p>
+
+                     <a href="https://github.com/dth2701/Sudoku-Solver" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/ai-player.svg" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <h2 class="projects__title">AI Player</h2>
+                     <p class = "card__text">Developed a AI game player using the Minimax algorithm with Alpha-Beta Pruning to strategically predict the best moves, 
+                        allowing the system to evaluate over 10,000 moves per second and ensuring optimal counter-strategies against human opponents.
+                     </p>
+                     <p class = "card__text">Technologies: Python.</p>
+
+                     <a href="https://github.com/dth2701/AI-Player" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/bookmapper.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <h2 class="projects__title">Book Mapper</h2>
+                     <p class = "card__text">Co-developed the application to sort through 11,000+ books in CSV format to improve user experience to minimize average searching time. 
+                        I was in charged on operating system functionality to iterate over all the values to secure, manipulate and present data.
+                     </p>
+                     <p class = "card__text">Technologies: Java, Linux(Ubuntu).</p>
+
+                     <a href="https://github.com/dth2701/BookMapper" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/scheduler.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <h2 class="projects__title">Inventory Log Scheduler</h2>
+                     <p class = "card__text">Co-developed the application to  to streamline and incentivize delivery orders organization stored in HTML format for customers. 
+                        I was in charged for devising initial algorithm to improve reliability, security, and maintainability of the system.
+                     </p>
+                     <p class = "card__text">Technologies: Java, Linux(Ubuntu), HTML.</p>
+
+                     <a href="https://github.com/dth2701/Inventory-Log-Scheduler" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/capitol-path.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <h2 class="projects__title">Capital Path</h2>
+                     <p class = "card__text">My team developed the application to find the shortest path between two selected capitol states. 
+                        I was in charged in transferring 50 state capitals onto the DOT format and convert data onto memory drives.
+                     </p>
+                     <p class = "card__text">Technologies: Java, Linux(Ubuntu), DOT.</p>
+
+                     <a href="https://github.com/dth2701/-Capitol-Paths" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/dog-gallery.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Dog Gallery</h2>
+                     <p class = "card__text">Developed a dog breed recommendation web application, 
+                        utilizing React.js and the Dog API to display images of that breed in the gallery.
+                     </p>
+                     <p class = "card__text">Technologies: React, JavaScript, HTML, CSS.</p>
+
+                     <a href="https://dth2701.github.io/Dog-Gallery" class="projects__button">
+                        Demo <i class="ri-external-link-line"></i>
+                     </a>
+                     <a href="https://github.com/dth2701/Dog-Gallery" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/task-management-web.png" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+                     <h2 class="projects__title">GeoWeather Task Manager</h2>
+                     <p class = "card__text">The application helps users organize tasks with options to mark as done or delete but also integrates real-time weather updates and date-time displays, 
+                        all accessible through a user-friendly interface.
+                     </p>
+                     <p class = "card__text">Technologies: AngularJS, JavaScript, HTML, CSS.</p>
+
+                     <a href="https://github.com/dth2701/GeoWeather-Task-Manager" class="projects__button">
+                        Demo <i class="ri-external-link-line"></i>
+                     </a>
+                     <a href="https://dth2701.github.io/GeoWeather-Task-Manager/" class="projects__button">
+                        View code <i class='bx bxl-github'></i>
+                     </a>
+                     </a>
+                  </div>
+               </article>
+
+            </div>
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <h3 class="section__subtitle">
+               Get In <span>Touch</span>
+            </h3>
+
+            <h2 class="section__title">
+               Contact Me
+            </h2>
+
+            <div class="contact__container container grid">
+               <form action="" class="contact__form" id="contact-form">
+                  <div class="contact__group">
+                     <input type="text" name="user_name" required placeholder="Enter your name" class="contact__input">
+                     <input type="email" name="user_email" required placeholder="Enter your email" class="contact__input">
+                  </div>
+
+                  <textarea name="user_project" required placeholder="Enter your message" class="contact__input"></textarea>
+                  
+                  <p class="contact__message" id="contact-message"></p>
+                 
+                  <div class="contact__buttons">
+   <a href="assets/img/Amy_Resume_FE_Internship_2024.pdf" download>
+      <button type="submit" class="button contact__button">Download CV</button>
+   </a>
+
+                     <button type="submit" class="button contact__button">
+                        Send Message
+                     </button>
+                  </div>
+               </form>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div>
+               <h1 class="footer__title">
+                  Huong (Amy) <span>Do</span>
+               </h1>
+               
+               <h2 class="footer__education">
+                  Looking forward to growing as a SWE intern in Summer 2024!   
+               </h2>
+            </div>
+
+            <div class="footer__social">
+               <a href="https://www.linkedin.com/in/huong-thien-do/" target="_blank" class="home__social-link">
+                  <i class="ri-linkedin-box-line"></i>
+               </a>
+
+               <a href="https://github.com/dth2701" target="_blank" class="home__social-link">
+                  <i class="ri-github-fill"></i>
+               </a>
+
+               <a href="https://www.instagram.com/dth.2701" target="_blank" class="footer__social-link">
+                  <i class="ri-instagram-line"></i>
+               </a>
+            </div>
+
+            <span class="footer__copy">
+               &#169; 2023 Huong Do. ALL RIGHTS RESERVED
+            </span>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
       </a>
-      <a id="resumeDownload" href="/assets//Amy_Resume_2023.pdf" download>Download Resume
-        <img src="/assets/download.png" />
-      </a>
-    </div>
 
-  </div>
-  <div id="contact">
-    <div id="contactTitle" data-aos="fade-up">
-      <h1>Contact</h1>
-      <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" data-aos="fade-up">
-        <div class="hidden">
-          <label>Fill this if you are not human: <input name="bot-field" /></label>
-        </div>
-        <div class="group">
-          <input type="text" name="name" required="required" /><span class="highlight"></span><span class="bar"></span>
-          <label>Name</label>
-        </div>
-        <div class="group">
-          <input type="text" name="email" required="required" /><span class="highlight"></span><span class="bar"></span>
-          <label>Email</label>
-        </div>
-        <div class="group">
-          <textarea type="textarea" name="message" rows="5" required="required"></textarea><span
-            class="highlight"></span><span class="bar"></span>
-          <label>Message</label>
-        </div>
-        <div class="btn-box">
-          <button class="btn btn-submit" type="submit">Send Message<img src="assets/paper-plane.png"></button>
-        </div>
-      </form>
-    </div>
-  </div>
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
 
-  <footer>
-    <div id="footer-links">
-      <a href="dothienhuong2701@gmail.com"
-        onmouseover="this.href=this.href.replace(/[zyx]/g,'');" target="_blank">
-        <img src="assets/email.png">
-      </a>
-      <a href="https://www.linkedin.com/in/huong-thien-do/" target="_blank">
-        <img src="assets/linkedin.png">
-      </a>
-      <a href="https://github.com/dth2701" target="_blank">
-        <img src="assets/github3.png">
-      </a>
-    </div>
-    <div id="copyright">&#169; <span id="year"></span> Huong Do. ALL RIGHTS RESERVED</div>
-  </footer>
+      <!--=============== EMAIL JS ===============-->
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script type="text/javascript" src="/main.js"></script>
-
-</body>
-
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
