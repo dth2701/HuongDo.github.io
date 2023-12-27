@@ -387,13 +387,12 @@ svg {
   padding-top: 2rem;
 }
 
-#skillsMain {
+.skillsMain {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   width: 1000px;
 }
 .techDiv {
@@ -739,8 +738,9 @@ svg {
     padding-block: 1.5rem;
   }
   #skillsMain {
-    grid-template-columns: max-content;
-    row-gap: 1rem;
+    flex-direction: row;
+    /* grid-template-columns: max-content;
+    row-gap: 1rem; */
   }
 }
 
@@ -868,9 +868,7 @@ svg {
   .skills__description {
     margin-bottom: 3rem;
   }
-  .skillsMain {
-    column-gap: 8rem;
-  }
+
   .skills__group {
     row-gap: 1.5rem;
   }
