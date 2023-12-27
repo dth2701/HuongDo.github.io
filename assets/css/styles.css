@@ -740,6 +740,7 @@ svg {
     flex-direction: column;
     grid-template-columns: max-content;
     row-gap: 1rem;
+    
   }
 }
 
