@@ -377,18 +377,17 @@ svg {
 }
 /*=============== SKILLS ===============*/
 
-#skillsDiv {
+.skillsDiv {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
   background-color: var(--container-color);
-  padding-bottom: 2rem;
-  padding-top: 2rem;
 }
 
 .skillsMain {
-  display: flex;
+  align-items: center;
+  display: grid;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
@@ -737,10 +736,10 @@ svg {
   .services__card {
     padding-block: 1.5rem;
   }
-  #skillsMain {
-    flex-direction: row;
-    /* grid-template-columns: max-content;
-    row-gap: 1rem; */
+  .skillsMain {
+    flex-direction: column;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
   }
 }
 
@@ -748,11 +747,11 @@ svg {
 @media screen and (min-width: 576px) {
   .home__container,
   .about__container,
-  .skills__container,
+  .skillsMain,
   .services__container,
   .projects__container,
   .contact__container {
-    grid-template-columns: 360px;
+    grid-template-columns: repeat(1, 352px);
     justify-content: center;
   }
 }
@@ -764,7 +763,7 @@ svg {
 
   .home__container,
   .about__container,
-  .skills__container {
+  .skillsMain {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
@@ -790,7 +789,7 @@ svg {
   }
 
   .services__container,
-  .projects__container {
+  .skillsMain {
     grid-template-columns: repeat(2, 352px);
   }
 }
@@ -860,22 +859,6 @@ svg {
     margin-bottom: 3rem;
   }
 
-  .skills__container {
-    grid-template-columns: 340px 425px;
-    column-gap: 10rem;
-    padding-bottom: 4rem;
-  }
-  .skills__description {
-    margin-bottom: 3rem;
-  }
-
-  .skills__group {
-    row-gap: 1.5rem;
-  }
-  .skills__item {
-    font-size: var(--h3-font-size);
-  }
-
   .services__container {
     grid-template-columns: repeat(2, 352px);
     padding-block: 2.5rem 4rem;
@@ -884,9 +867,8 @@ svg {
     padding: 3.5rem 2rem;
   }
 
-  .projects__container {
-    grid-template-columns: repeat(3, 400px);
-    row-gap: 3rem;
+  .skillsMain {
+    grid-template-columns: repeat(3, 320px);
     padding-block: 2.5rem 4rem;
   }
   .projects__button {
