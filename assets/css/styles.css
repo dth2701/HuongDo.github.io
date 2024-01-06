@@ -748,16 +748,15 @@ svg {
 @media screen and (min-width: 576px) {
   .home__container,
   .about__container,
-  .skillsMain,
   .services__container,
   .contact__container {
     grid-template-columns: repeat(1, 352px);
     justify-content: center;
   }
-}
-@media screen and (min-width: 576px) {
+
+  .skillsMain,
   .projects__container {
-    grid-template-columns: repeat(3, 352px);
+    grid-template-columns: repeat(2, 352px);
   }
 }
 
@@ -794,8 +793,10 @@ svg {
   }
 
   .projects__container,
-  .services__container,
   .skillsMain {
+    grid-template-columns: repeat(3, 352px);
+  }
+  .services__container {
     grid-template-columns: repeat(2, 352px);
   }
 }
