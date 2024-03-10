@@ -590,8 +590,7 @@ svg {
 }
 
 .contact__form, 
-.contact__group,
-.contact__buttons {
+.contact__group {
   display: grid;
   row-gap: 1rem;
 }
@@ -620,8 +619,12 @@ svg {
 .contact__button {
   justify-self: center;
   cursor: pointer;
+  
 }
+.contact__buttons{
+  text-align: center;
 
+}
 .contact__buttons a {
   margin: auto;
 }
